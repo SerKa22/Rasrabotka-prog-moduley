@@ -6,8 +6,15 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            //ikbh
+          
+            var calcul = new Calculat();
+            var res = calcul.Calculate(Console.ReadLine());
+            Console.WriteLine(res);
+
+
+
+
+
         }
     }
 }

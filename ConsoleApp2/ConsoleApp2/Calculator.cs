@@ -10,13 +10,17 @@ namespace ConsoleApp2
         {
             var numbers = ParsString(expracssion);
             decimal res = 0;
-            for (var i = 0; i < numbers.Length; i++)
+            /*for (var i = 0; i < numbers.Length; i++)
+            {
+                res = res + numbers[i];
+            }*/
+            foreach(var s in numbers)
             {
                 res = res + numbers[i];
             }
             return res;
         }
-        private decimal[] ParsString(string expracssion)
+        private List<decimal> ParsString(string expracssion)
         {
             var perem = expracssion.Split('+');
             var res = new List<decimal>(perem.Length);
@@ -34,9 +38,9 @@ namespace ConsoleApp2
 
 
             }
-            return res.ToArray();
+            return res;
         }
-        private decimal[] ParsStringSigned(string expracssion)
+        private List<decimal> ParsStringSigned(string expracssion)
         {
             var minus = 1;
             var perem = expracssion.Split('-');
@@ -52,7 +56,7 @@ namespace ConsoleApp2
                 res.Add(promres);
                 minus = -1;
             }
-            return res.ToArray();
+            return res;
         }
     }
 

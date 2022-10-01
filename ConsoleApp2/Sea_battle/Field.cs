@@ -11,19 +11,35 @@ namespace Sea_battle
         {
             return cells[x,y];
         }
-        public bool SetCellValley()
+        public bool SetCellValley(byte x, byte y, byte valley)
         {
-
+            if (cells[x,y] != 0)
+            {
+                return false;
+            }
+            cells[x, y] = valley;
+            return true;
+        }
+        public bool CrashCell(byte x, byte y)
+        {
+            if (cells[x, y] != 0)
+            {
+                return true;
+            }
+            return false;
         }
         public Field(int sizex, int sizey)
         {
             cells = new byte[sizex, sizey];
         }
-        public Field(int sizex)
+        public Field(int sizex):this(sizex, sizex)
         {
-            cells = new byte[sizex, sizex];
+            
         }
+        public Field(): this(10,10)
+        {
 
+        }
 
     }
 

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{61370FCB-245B-4B25-8D65-BBAE89F162E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{61370FCB-245B-4B25-8D65-BBAE89F162E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sea_battle", "Sea_battle\Sea_battle.csproj", "{5D622448-569C-484B-B002-C04DC015F1FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{61370FCB-245B-4B25-8D65-BBAE89F162E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61370FCB-245B-4B25-8D65-BBAE89F162E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61370FCB-245B-4B25-8D65-BBAE89F162E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D622448-569C-484B-B002-C04DC015F1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D622448-569C-484B-B002-C04DC015F1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D622448-569C-484B-B002-C04DC015F1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D622448-569C-484B-B002-C04DC015F1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
